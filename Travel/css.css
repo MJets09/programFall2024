@@ -1,16 +1,23 @@
+@font-face {
+    font-family: yeezy;
+    src: url(../font/yeezy_tstar-regular-webfont.ttf);
+    font-family: yeezyBold;
+    src: url(../font/yeezy_tstar-bold-webfont.ttf);
+}
+
 body{
     background-color: #F0F7EE;
     margin: 0;
     padding: 0;
+    font-family: yeezy;
 }
 
-h1 {
+h1,h2{
     text-align: center;
 }
 main {
         width: 800px;
         margin: 0 auto;
-        background-color: bisque;
 }
 a {
     text-decoration: none;
@@ -22,8 +29,8 @@ p, section {
     padding: 5px;
 }
 img{
-    width: 300px;
-    height: 300px;
+    width: 50px;
+    height: 50px;
 }
 footer{
     width: 800px;
@@ -49,9 +56,23 @@ footer{
 }
 
 .navbar a.active {
-    background-color: #04AA6D;
+    background-color: #00A7E1;
 }
 
 .navbar-right {
     float: right;
+}
+.ulLayout {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.ulLayout li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-family: yeezyBold;
 }
