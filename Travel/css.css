@@ -12,7 +12,7 @@ body{
     font-family: yeezy;
 }
 
-h1,h2{
+h1,h2, h3{
     text-align: center;
 }
 main {
@@ -28,7 +28,7 @@ li {
 p, section {
     padding: 5px;
 }
-img{
+.ulLayout img{
     width: 50px;
     height: 50px;
 }
@@ -75,4 +75,17 @@ footer{
     align-items: center;
     padding: 10px;
     font-family: yeezyBold;
+}
+#imagePanel {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+#imagePanel img {
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    border-radius: 15px;
 }
