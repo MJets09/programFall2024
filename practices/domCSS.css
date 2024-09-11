@@ -3,5 +3,14 @@ body {
     background-color: mintcream;
 }
 .highlight {
+    color: blue;
+}
+.base {
     color: red;
+}
+li {
+    list-style: none;
+}
+#content {
+    margin-bottom: 50px;
 }
