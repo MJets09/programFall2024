@@ -54,3 +54,12 @@ document.getElementById('add').addEventListener('click', function(){
 })
 
 console.log(document.getElementById('stars').lastElementChild)
+
+function addtoList() {
+    newLi = document.createElement('li')
+    addedItem = document.getElementById('items').value;
+    newLi.textContent = addedItem;
+
+    ulList = document.getElementById('sList');
+    ulList.appendChild(newLi)
+}
