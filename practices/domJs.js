@@ -1,6 +1,6 @@
 const changeText = document.getElementById("changeText");
 
-document.getElementById('changeText').addEventListener('click', function() {
+changeText.addEventListener('click', function() {
     document.getElementById('changeText').textContent = 'KOBEEE'
 })
 
@@ -22,7 +22,7 @@ console.log(liList[3].textContent)
 
 const listColor = document.getElementsByTagName('li');
 
-console.log(listColor)
+
 
 document.getElementById('changeBlue').addEventListener('click', function() {
 
@@ -63,3 +63,11 @@ function addtoList() {
     ulList = document.getElementById('sList');
     ulList.appendChild(newLi)
 }
+
+
+document.getElementById("remove").addEventListener("click", function(){
+    ulList = document.getElementById('sList');
+    lastChildren = ulList.lastElementChild
+
+    lastChildren.remove()
+})
