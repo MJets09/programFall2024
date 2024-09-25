@@ -71,3 +71,25 @@ document.getElementById("remove").addEventListener("click", function(){
 
     lastChildren.remove()
 })
+
+
+document.getElementById("oneB").addEventListener('click', function(){
+    document.getElementById('oneB').remove()
+})
+
+document.getElementById("twoB").addEventListener('click', function(){
+    document.getElementById('twoB').textContent = "Button One can dissapear bro"
+})
+
+document.getElementById('threeB').addEventListener('click', function(){
+    document.getElementById('twoB').classList.add('highlight')
+    document.getElementById('threeB').classList.add('base')
+})
+
+document.getElementById('formA').addEventListener('submit', function(){
+    event.preventDefault();
+    const inputValue = document.getElementById('formA').value;
+    document.getElementById('result').textContent = `You entered ${inputValue}`;
+    
+
+})
