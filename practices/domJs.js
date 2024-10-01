@@ -86,7 +86,7 @@ document.getElementById('threeB').addEventListener('click', function(){
     document.getElementById('threeB').classList.add('base')
 })
 
-document.getElementById('formA').addEventListener('submit', function(){
+document.getElementById('myForm').addEventListener('submit', function(){
     event.preventDefault();
     const inputValue = document.getElementById('formA').value;
     document.getElementById('result').textContent = `You entered ${inputValue}`;
