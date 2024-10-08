@@ -86,10 +86,25 @@ document.getElementById('threeB').addEventListener('click', function(){
     document.getElementById('threeB').classList.add('base')
 })
 
-document.getElementById('myForm').addEventListener('submit', function(){
-    event.preventDefault();
-    const inputValue = document.getElementById('formA').value;
-    document.getElementById('result').textContent = `You entered ${inputValue}`;
-    
+document.getElementById('four').addEventListener('click', function(){
 
+    let numValue = document.getElementById('four').value;
+
+    document.getElementById('displayNum').innerHTML = numValue;
+
+})
+
+
+document.getElementById('four').onmouseover = function() {
+
+    document.getElementById('four').classList.add('green');
+
+
+}
+
+document.getElementById('myForm').addEventListener('submit', function(){
+    event.preventDefault()
+    let userInput = document.getElementById('userInput').value;
+    let holdResult = document.getElementById('result');
+    holdResult.innerText = userInput;
 })
