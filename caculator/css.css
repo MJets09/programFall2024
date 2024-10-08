@@ -1,0 +1,21 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#display {
+    margin: 10px;
+}
+
+#container {
+
+    height: 400px;
+    width: 400px;
+    background-color: #D5F9DE;
+    border-radius: 25px;
+    text-align: center;
+
+}
