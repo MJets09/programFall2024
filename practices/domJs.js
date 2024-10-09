@@ -102,9 +102,13 @@ document.getElementById('four').onmouseover = function() {
 
 }
 
+
 document.getElementById('myForm').addEventListener('submit', function(){
-    event.preventDefault()
-    let userInput = document.getElementById('userInput').value;
-    let holdResult = document.getElementById('result');
-    holdResult.innerText = userInput;
+    event.preventDefault();
+    let userI = document.getElementById('userName').value
+    let userP = document.getElementById('userPassword').value
+    let para = document.getElementById('result');
+
+    para.innerHTML = `Your username is ${userI} and your password is ${userP}`;
+
 })
