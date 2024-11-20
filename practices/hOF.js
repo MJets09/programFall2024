@@ -18,3 +18,15 @@ let numbers = [2,5,1,8,6]
 let newNums = numbers.map((numbers) => numbers + 10)
 
 console.log(newNums)
+
+const alice  = {
+    name: "alice",
+    ball: 'Kevin',
+    greet: function() {
+        console.log("Hey, " + this.ball);
+    }
+}
+
+
+alice.greet();
+
