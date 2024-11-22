@@ -31,3 +31,66 @@ function findSmallest(x){
 
 
 findSmallest(numArr)
+
+function divEven(x) {
+
+    for(i = 0; i < x.length; i++) {
+
+        if(x[i] % 2 == 0) {
+            console.log(x[i])
+        }
+
+    }
+}
+
+divEven(numArr)
+
+function fizzBuzz(x) {
+
+    for(let i = 0; i < x.length; i++) {
+        if(x[i] % 3 == 0 || x[i] % 5 == 0) {
+            console.log('fizz')
+        }
+        else {
+            console.log(x[i])
+        }
+    }
+}
+
+function reverseArray(x) {
+
+    console.log(x.reverse())
+
+}
+
+
+reverseArray(numArr)
+
+let count = 0;
+
+function counterValue(x){
+
+    for(let i = 0; i < x.length; i++){
+        if(x[i] == 7) {
+            count++
+        }
+    }
+    console.log(count)
+}
+
+counterValue(numArr)
+
+
+function removeDupe(x){
+    console.log(new Set(x))
+}
+
+removeDupe(numArr)
+
+
+let OneTwo = [1,2];
+
+let fiveFo = [5,4];
+
+
+console.log(...OneTwo, ...fiveFo);
