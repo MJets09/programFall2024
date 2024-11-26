@@ -9,6 +9,14 @@ let num = 0;
 
 let numArr = [5,6,8,3,5,7,4,6,9,5,66,88,44,5,3,9,7,5,]
 
+
+function filterBelowFive(x){
+    let belowFive = x.filter(num => num >=5);
+    console.log(belowFive)
+}
+
+filterBelowFive(numArr)
+
 function findLargest(x){
     for(i = 0; i < x.length; i++){
         if(x[i] > num){
@@ -82,7 +90,10 @@ counterValue(numArr)
 
 
 function removeDupe(x){
-    console.log(new Set(x))
+    let newArr = [...new Set(x)];
+    let neuxArr = new Set(x)
+    console.log(Array.isArray(neuxArr))
+    console.log(Array.isArray(newArr))
 }
 
 removeDupe(numArr)
@@ -94,3 +105,10 @@ let fiveFo = [5,4];
 
 
 console.log(...OneTwo, ...fiveFo);
+
+let veggies = ['Carrots','Pumpkins','Daikons','Plums','Broccoli','Plum','Johnston'];
+
+veggies.splice(2,1)
+
+console.log(veggies)
+
