@@ -112,3 +112,29 @@ document.getElementById('myForm').addEventListener('submit', function(){
     para.innerHTML = `Your username is ${userI} and your password is ${userP}`;
 
 })
+
+document.getElementById("select").addEventListener('click', function(){
+    alert('Works')
+})
+
+document.querySelector('p').addEventListener('click', function(){
+    document.getElementById('pSelect').classList.add('green')
+})
+
+let myList = document.querySelectorAll('li');
+
+myList.forEach(li => {
+    console.log(li.textContent)
+})
+
+const numbers = [3, 8, 6];
+
+numbers.forEach((num, index, arr) => {
+  arr[index] = num * 2;
+});
+
+console.log(numbers); // Output: [2, 4, 6]
+
+document.getElementById('clickMe').addEventListener('click', function(){
+    document.getElementById('hClick').textContent = 'The world is Yours'
+})
